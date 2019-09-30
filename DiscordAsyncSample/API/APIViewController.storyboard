@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3WE-6R-rfZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KfD-ab-vDU">
+            <objects>
+                <viewController id="3WE-6R-rfZ" customClass="APIViewController" customModule="DiscordAsyncSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sRb-DE-2av">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AOL-p0-cqu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="mNi-yk-hoF">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mNi-yk-hoF" firstAttribute="centerY" secondItem="sRb-DE-2av" secondAttribute="centerY" id="0Y7-KJ-Uzw"/>
+                            <constraint firstItem="mNi-yk-hoF" firstAttribute="centerX" secondItem="sRb-DE-2av" secondAttribute="centerX" id="Tc8-N9-nvR"/>
+                            <constraint firstItem="i7Z-Su-CbP" firstAttribute="trailing" secondItem="AOL-p0-cqu" secondAttribute="trailing" id="V0r-Xb-183"/>
+                            <constraint firstItem="i7Z-Su-CbP" firstAttribute="bottom" secondItem="AOL-p0-cqu" secondAttribute="bottom" id="e2l-bM-Owu"/>
+                            <constraint firstItem="AOL-p0-cqu" firstAttribute="leading" secondItem="i7Z-Su-CbP" secondAttribute="leading" id="inp-bf-Qiq"/>
+                            <constraint firstItem="AOL-p0-cqu" firstAttribute="top" secondItem="i7Z-Su-CbP" secondAttribute="top" id="qh8-EH-LER"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i7Z-Su-CbP"/>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="mNi-yk-hoF" id="K6K-IK-Ysr"/>
+                        <outlet property="tableView" destination="AOL-p0-cqu" id="8Ur-KY-wQ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQd-Qe-ycx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="107" y="-230"/>
+        </scene>
+    </scenes>
+</document>
