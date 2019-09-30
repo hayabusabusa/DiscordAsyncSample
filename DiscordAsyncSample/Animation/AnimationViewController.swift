@@ -46,7 +46,7 @@ final class AnimationViewController: UIViewController {
             break
         }
         
-        animationLabel.text = "Animating"
+        animationLabel.text = "Animation Start"
         print("Animation Start")
         
         UIView.animate(withDuration: 1.0,
@@ -54,8 +54,9 @@ final class AnimationViewController: UIViewController {
                             hideView.isHidden.toggle()},
                        completion: { result in
                         print("Animation End (in completion block)")
-                        self.animationLabel.text = "Animation complete"})
+                        self.animationLabel.text = "Animation End (in completion block)"})
         
+        animationLabel.text = "Animation End?"
         print("Animation End?")
     }
 }

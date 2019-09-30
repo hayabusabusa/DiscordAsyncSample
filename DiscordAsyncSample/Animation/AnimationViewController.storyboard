@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q3l-IK-HYE">
-                                <rect key="frame" x="56" y="105" width="302" height="170"/>
+                                <rect key="frame" x="56" y="102.5" width="302" height="170"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SzV-W4-lIV" userLabel="Blue View">
                                         <rect key="frame" x="0.0" y="0.0" width="75.5" height="170"/>
@@ -40,7 +40,7 @@
                                 </constraints>
                             </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0SF-Cl-bR8">
-                                <rect key="frame" x="56" y="299" width="302" height="32"/>
+                                <rect key="frame" x="56" y="296.5" width="302" height="32"/>
                                 <segments>
                                     <segment title="Blue"/>
                                     <segment title="Green"/>
@@ -49,7 +49,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sq5-uD-gbf">
-                                <rect key="frame" x="56" y="362" width="302" height="44"/>
+                                <rect key="frame" x="56" y="359.5" width="302" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Lcz-HJ-Fac"/>
@@ -68,8 +68,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vy-cU-zRm">
-                                <rect key="frame" x="24" y="60" width="366" height="29"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <rect key="frame" x="24" y="60" width="366" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
