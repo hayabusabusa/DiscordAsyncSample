@@ -33,14 +33,14 @@ final class APIViewController: UIViewController {
 extension APIViewController {
     
     func setupUI() {
-        // Navigation
+        // - Navigation
         navigationItem.title = "API"
         
-        // Indicator
+        // - Indicator
         indicatorView.isHidden = true
         indicatorView.stopAnimating()
         
-        // TableView
+        // - TableView
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorInset = .zero
